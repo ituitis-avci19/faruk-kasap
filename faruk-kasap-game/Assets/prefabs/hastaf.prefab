@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 9180603853506119134}
   - component: {fileID: 9180603853506119133}
   m_Layer: 0
-  m_Name: hasta
-  m_TagString: Untagged
+  m_Name: hastaf
+  m_TagString: mermiyiyoket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,6 +116,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sickperson: {fileID: 9180603853506119128}
+  tukuruk: {fileID: 3808218532122825994, guid: 77c7d1cda2c563c4f948842c7cf0ded4, type: 3}
+  tukurme_araligi: 5
+  tukuruk_hizi: 2.3
 --- !u!60 &9180603853506119134
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -283,4 +286,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
