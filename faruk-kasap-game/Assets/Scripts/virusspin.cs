@@ -16,7 +16,7 @@ public class virusspin : MonoBehaviour
 
     void Start()
     {
-        
+        scale = ScaleRange.x;
     }
 
     // Update is called once per frame
