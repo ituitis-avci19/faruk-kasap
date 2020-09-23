@@ -14,9 +14,11 @@ GameObject:
   - component: {fileID: 3627206215810192614}
   - component: {fileID: 3627206215810192612}
   - component: {fileID: 3627206215810192615}
+  - component: {fileID: 7371771251806653529}
+  - component: {fileID: 507429079364153221}
   m_Layer: 0
-  m_Name: korona
-  m_TagString: Untagged
+  m_Name: koronaf
+  m_TagString: mermiyiyoket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,6 +118,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sickperson: {fileID: 3627206215810192613}
+  tukuruk: {fileID: 3808218532122825994, guid: 77c7d1cda2c563c4f948842c7cf0ded4, type: 3}
+  tukurme_araligi: 5
+  tukuruk_hizi: 2.3
 --- !u!50 &3627206215810192612
 Rigidbody2D:
   serializedVersion: 4
@@ -212,3 +217,33 @@ PolygonCollider2D:
       - {x: 0.12, y: -0.36499998}
       - {x: 0.17, y: -0.45499998}
       - {x: 0.21, y: -0.445}
+--- !u!114 &7371771251806653529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3627206215810192613}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0782aa0b10bc47d4daa994873883ed63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  korona_speed: 2
+  korona: {fileID: 3627206215810192612}
+--- !u!114 &507429079364153221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3627206215810192613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eb8a76ab34144a01ac4bfcd8b9f7dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScaleRange: {x: 1, y: 1.5}
+  scaleSpeed: 0.25
+  rotateSpeed: 120
