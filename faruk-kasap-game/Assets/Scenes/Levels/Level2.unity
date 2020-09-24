@@ -1092,7 +1092,7 @@ PrefabInstance:
     - target: {fileID: 3627206215810192613, guid: 933affef9adb62a45bf5daa2f5c995f5,
         type: 3}
       propertyPath: m_Name
-      value: koronaf (1)
+      value: koronaf
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 933affef9adb62a45bf5daa2f5c995f5, type: 3}
