@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class movement : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject dayi,bullet,cross_symbol;
+    public GameObject dayi,bullet,cross_symbol,kolonya_image;
     public Joystick joystick_mov,joystick_fire;
     public float speed,bullet_speed,atis_mesafesi,kirlilik_artis_hizi,max_kirlilik,kirlilik_azalis_hizi;
     public Image kirlilik_bari;
@@ -16,6 +16,7 @@ public class movement : MonoBehaviour
     public Button cesmeac;
     public CircleCollider2D circlecol;
     public int maske_var_mi = 0;
+    public int kolonya_sayisi=0;
 
     private Rigidbody2D rigbody;
     private int direction = 0, atisyapildi = 0;//0 mean left 1 mean right
@@ -25,6 +26,7 @@ public class movement : MonoBehaviour
  
     void Start()
     {
+        kolonya_sayisi = 0;
         elyikaniyor = false;
         kirlilik_bari.fillAmount = 0;
         maske_var_mi = 0;
@@ -46,6 +48,11 @@ public class movement : MonoBehaviour
             FindObjectOfType<Sink>().CloseTap();
             cesmeac.gameObject.SetActive(false);
         }
+        if (kolonya_sayisi == 1)
+        {
+            kolonya_image.gameObject.SetActive(true);
+        }
+        else kolonya_image.gameObject.SetActive(false);
         int kacibeyaz = maske_var_mi;
         int kacisiyah = 3 - maske_var_mi;
         for(int i = 0; i < kacibeyaz; i++)
@@ -84,7 +91,7 @@ public class movement : MonoBehaviour
             direction = 0;
             rigbody.transform.Rotate(0, 180, 0);
         }
-        if(joystick_fire.Horizontal!=0 || joystick_fire.Vertical != 0)
+        if((joystick_fire.Horizontal!=0 || joystick_fire.Vertical != 0) && kolonya_sayisi==1)
         {
             cross_symbol.SetActive(true);
             float x = joystick_fire.Horizontal;
@@ -100,8 +107,9 @@ public class movement : MonoBehaviour
         {
             cross_symbol.SetActive(false);
         }
-        if(joystick_fire.Horizontal==0 && joystick_fire.Vertical == 0 && atisyapildi==1)
+        if(joystick_fire.Horizontal==0 && joystick_fire.Vertical == 0 && atisyapildi==1 && kolonya_sayisi==1)
         {
+            kolonya_sayisi = 0;
             atisyapildi = 0;
             GameObject mermi;
             Vector2 konum = rigbody.transform.position; ;
