@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5601600583483352083}
   - component: {fileID: 5601600583483352082}
   - component: {fileID: 5601600583483352085}
+  - component: {fileID: 6884115706839102240}
   m_Layer: 0
   m_Name: yerde_kolonya
   m_TagString: Untagged
@@ -71,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 09cbebe226ec86b4e8b25023a5d9e7f3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -133,3 +134,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kolonya: {fileID: 5601600583483352081}
+--- !u!114 &6884115706839102240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5601600583483352081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eb8a76ab34144a01ac4bfcd8b9f7dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScaleRange: {x: 0.09922002, y: 0.11}
+  scaleSpeed: 0.05
+  rotateSpeed: 30

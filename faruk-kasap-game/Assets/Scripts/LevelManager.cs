@@ -14,8 +14,9 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
         LosePanel.SetActive(false);
-        //WinPanel.SetActive(false);
+        WinPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -50,9 +51,11 @@ public class LevelManager : MonoBehaviour
     public void MissionFailed()
     {
         LosePanel.SetActive(true);
+        Time.timeScale = 0;
     }
     public void MissionCompleted()
     {
         WinPanel.SetActive(true);
+        Time.timeScale = 0;
     }
 }
