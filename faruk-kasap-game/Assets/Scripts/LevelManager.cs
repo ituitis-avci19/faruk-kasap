@@ -27,7 +27,7 @@ public class LevelManager : MonoBehaviour
 
     public void NextLevel()
     {
-        if (scene == 8)
+        if (scene >= 6)
         {
             MainMenu();
         }else

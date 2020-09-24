@@ -16,14 +16,14 @@ public class MenuManager : MonoBehaviour
     {
         if (!PlayerPrefs.HasKey("level1"))
         {
-            for (int i = 0; i < 8; i++)
+            for (int i = 0; i < 6; i++)
             {
                 PlayerPrefs.SetInt("level" + (i + 1), 0);
             }
             PlayerPrefs.SetInt("level1", 1);
         }
 
-        for (int i = 1; i <= 8; i++)
+        for (int i = 1; i <= 6; i++)
         {
             if (PlayerPrefs.GetInt("level" + i) == 1) {
                 GameObject.Find("" + i).GetComponent<Image>().sprite = unlockedButton;
