@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Levels/Level1.unity
-=======
-- path: Assets/Scenes/faruk.unity
->>>>>>> e018cb5279ec6bf026feafc2f8925aad4dbc8c3d
+- path: Assets/Scenes/Levels/Level3.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
